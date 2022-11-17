@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:note_app/cubit/cubit/cubit/color_cubit.dart';
 import 'package:note_app/cubit/cubit/note_cubit.dart';
 import 'package:note_app/screens/home_screen.dart';
 
@@ -18,7 +17,7 @@ class AppRoot extends StatelessWidget {
         return MultiBlocProvider(
           providers: [
             BlocProvider(create: (context) => NoteCubit()),
-            BlocProvider(create: (context) => ColorCubit())
+           
           ],
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
