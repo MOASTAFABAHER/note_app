@@ -18,7 +18,7 @@ class NoteScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(),
-        backgroundColor: Colors.blue[800],
+        backgroundColor: Colors.indigo[300],
         body: BlocConsumer<NoteCubit, NoteState>(
             listener: (context, state) {},
             builder: (context, state) {
